@@ -143,7 +143,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 
 /*===== Plugin Stylesheets Import =====*/
-@import url(plugins.css);
+/* @import url(plugins.css); */
 
 /*===== General Styling =====*/
 html, 
@@ -6101,7 +6101,7 @@ header.styl8 nav {
   padding-left: 50px;
 }
 header.styl8 nav > ul {
-  padding-left: ;
+  /* padding-left: ; */
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -8162,7 +8162,7 @@ blockquote p {
 .blg-dtl-athr > img {
   float: left;
   margin-right: 30px;
-  border-top: ;
+  /* border-top: ; */
 }
 .blg-dtl-athr-inf {display: table;}
 .blg-dtl-athr-inf > h4 {
@@ -8580,7 +8580,7 @@ header nav ul ul li > a:focus,
 }
 .rspn-tpbr .sdbr-btn::before {
   right: 3px;
-  top: -3px;S
+  top: -3px;
 }
 .rspn-mdbr {
   background-color: #FEE048;
