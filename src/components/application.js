@@ -1,3 +1,4 @@
+import React from 'react'
 import isamsLogo from '../assets/images/isamslogo.png'
 import mbLogo from '../assets/images/ManageBac.png'
 import sageLogo from "../assets/images/logo-sage-people.png"
@@ -6,7 +7,7 @@ import razPlusLogo from "../assets/images/raz-plus.png"
 import bigUniverse from "../assets/images/biguuniverse.PNG"
 import freckelogo from "../assets/images/frecklelogo.png"
 import toddleLogo from "../assets/images/toddle.png"
-import gimkit from "../assets/images/toddle.png"
+import gimkit from "../assets/images/gimkit.png"
 import sysaid from "../assets/images/sysaidlogo.png"
 import map from "../assets/images/maplogo.png"
 import digital from "../assets/images/digitallogo.png"

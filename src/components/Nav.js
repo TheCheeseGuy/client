@@ -1,3 +1,5 @@
+import React from "react"
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 function Nav() {
     return (
         <section>
@@ -5,33 +7,26 @@ function Nav() {
                 <div className="container">
                     <nav className="rd4">
                         <ul>
-                            <li><a href="index.html"><div>Home</div></a></li>
-                            <li class="menu-item-has-children"><a href="link.html"><div>Mega Menu</div></a>
-                                <div class="mgamnu rd6">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6 col-lg-4">
-                                            <div class="mega-lnks">
-                                                Home
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-lg-4">
-                                            <div class="mega-lnks">
-                                                Meet the Staff
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-lg-4">
-                                            <div class="mega-lnks">
-                                                Pages
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            <li><Link to = "/"><div>Home</div></Link></li>
+                            <li><CustomLink to = "/staff"><div>Meet the staff</div></CustomLink></li>
+                            <li><CustomLink to = "/request-form "><div>Request Form</div></CustomLink></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </section>
+    )
+}
+
+function CustomLink({ to, children, ...props}){
+    const resolvedPath =  useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname, end: true})
+    return (
+        <li className={isActive? "active": ""}>
+            <Link to ={ to }{ ... props}>
+                {children}
+            </Link>
+        </li>
     )
 }
 
